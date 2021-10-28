@@ -1,0 +1,42 @@
+.body__bg {
+    min-height: 100%;
+    padding-top: 100px;
+   
+  }
+  body {
+    background-image: url(../images/bg-single.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  
+  .login__bottom {
+    margin-bottom: 100px;
+  }
+  .login__font {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff !important;
+  }
+  .login__border {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff !important;
+    color: wheat;
+  }
+  .login__form-bottom {
+    margin-bottom: 50px;
+  }
+  .login__color {
+    color: #fff;
+  }
+  .login__font-tittle {
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+ 
+  

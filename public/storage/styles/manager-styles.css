@@ -1,0 +1,91 @@
+.navbar-active {
+    background-color: #dedede;
+    color: white;
+}
+
+
+.sidebar-link {
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.sidebar-link span { 
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+form label {
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.button-container a{
+    float: right;
+}
+
+.td-func {
+    display: flex;
+}
+
+
+.category-chosse {
+    display: none;
+}
+
+.group-chosse {
+    display: none;
+}
+
+.genre-chosse {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+
+.line-break {
+    border-bottom: solid 1px #dedede;
+    padding-bottom: 10px;
+}
+
+.value-chosse {
+    display: none;
+}
+.value-chosse .line-break input {
+    width: 40%;
+    
+}
+
+.value-chosse .line-break {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.value-chosse.show {
+    display: flex;
+}
+
+.detail-input {
+    background-color: white !important;
+}
+
+.value-range {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.value-range p {
+    margin-top: 16px;
+}
+
+.pagination {
+    height: 50px;
+float: right;
+}
