@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!-- Font Awesome CSS-->
 <!-- orion icons-->
 <!-- theme stylesheet-->
-<link rel="stylesheet" href="{{asset('/storage/admin/admin_assets/css/style.default.css')}}" id="theme-stylesheet">
+<link rel="stylesheet" href="{{asset('/storage/admin/admin_assets/css/style.default.css')}}">
 <!-- Custom stylesheet - for your changes-->
 <link rel="stylesheet" href="{{asset('/storage/admin/admin_assets/css/custom.css')}}">
 <link rel="stylesheet" href="{{asset('/storage/admin/admin_assets/css/style.css')}}">

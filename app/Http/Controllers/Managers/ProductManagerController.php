@@ -89,4 +89,9 @@ class ProductManagerController extends Controller
         $this->productRepository->update($id,$attributes);
         return redirect('/manager/products');
     }
+
+    public function delete($id){
+        $this->productRepository->delete($id);
+        return redirect('/manager/products');
+    }
 }
