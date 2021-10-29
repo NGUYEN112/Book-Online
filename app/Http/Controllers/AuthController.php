@@ -31,7 +31,7 @@ class AuthController extends Controller
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
             if (Auth::user()->role == null) {
                 return redirect('/');
-            } else{
+            } else if(auth()->user()->role == 0){
                 return redirect('/manager');
             }
         } else {
