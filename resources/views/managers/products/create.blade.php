@@ -17,7 +17,7 @@
         <div class="form-group row">
             <label class="col-md-3 form-control-label">Product Image</label>
             <div class="col-md-9">
-                <input required id="inputHorizontalSuccess" name="product_image" type="file" placeholder="" class="form-control form-control-success">
+                <input required id="inputHorizontalSuccess" name="product_image" type="text" placeholder="Image Url" class="form-control form-control-success">
             </div>
         </div>
 
