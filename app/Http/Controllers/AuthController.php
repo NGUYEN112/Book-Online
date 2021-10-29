@@ -29,9 +29,9 @@ class AuthController extends Controller
         $email = $request->email;
         $password = $request->password;
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
-            if (Auth::user()->role == null) {
+            if (Auth::user()->role === null) {
                 return redirect('/');
-            } else if(auth()->user()->role == 0){
+            } else{
                 return redirect('/manager');
             }
         } else {
