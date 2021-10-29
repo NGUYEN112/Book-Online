@@ -1295,9 +1295,9 @@ button {
 
 @media (max-width: 1199.98px) {
   .sidebar {
-    width: 6rem;
+    width: 8rem;
     text-align: center;
-    margin-left: -6rem;
+    margin-left: -8rem;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
@@ -1313,7 +1313,7 @@ button {
   }
 }
 
-.sidebar.show {
+.sidebar.show-side {
   margin-left: 0;
 }
 
@@ -2908,6 +2908,12 @@ h6,
 .lead {
   font-size: 1.125rem;
   font-weight: 300;
+  display: none;
+}
+@media (max-width: 1199.98px){
+  .lead {
+    display: block;
+  }
 }
 
 .display-1 {

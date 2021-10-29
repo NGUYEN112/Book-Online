@@ -42,11 +42,11 @@
                     </form>
                 </li>
                 <li class="nav-item dropdown ml-auto">
-                    <a id="userInfo" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img src="" alt="" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow"></a>
+                    <a id="userInfo" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img src="{{asset('/storage/images/avt.jpg')}}" alt="" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow"></a>
                     <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family"></strong></a>
                         <div class=" dropdown-divider">
-                        </div><a href="" class="dropdown-item">Trang chủ</a>
-                        <div class="dropdown-divider"></div><a href="" class="dropdown-item">Logout</a>
+                        </div><a href="/" class="dropdown-item">Client</a>
+                        <div class="dropdown-divider"></div><a href="/auth/logout" class="dropdown-item">Logout</a>
                     </div>
                 </li>
 
@@ -57,7 +57,7 @@
     <div class="d-flex align-items-stretch">
         <div id="sidebar" class="sidebar py-3">
             <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">
-                QUẢN LÝ</div>
+                Manager</div>
             <ul class="sidebar-menu list-unstyled">
                 <li class="sidebar-list-item"><a href="/manager" class="sidebar-link text-dark"><i class="o-home-1 me-3 text-gray"></i><span>Home</span></a>
                 </li>
@@ -117,7 +117,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 text-center text-md-left text-primary">
-                    <p class="mb-2 mb-md-0">Cinerama Cinema &copy; 2021</p>
+                    <p class="mb-2 mb-md-0">Hoai Nguyen &copy; 2021</p>
                 </div>
                 <div class="col-md-6 text-center text-md-right text-gray-400">
                     <p class="mb-0">Design by
@@ -128,9 +128,9 @@
         </div>
     </footer>
     <script>
-        $('.sidebar-link').click(function() {
-            $('.category-list').toggleClass("show")
-            $('.fa-sort-down').toggleClass("click")
+        $('.sidebar-toggler').click(function() {
+            $('.sidebar').toggleClass("show-side")
+            // $('.fa-sort-down').toggleClass("click")
         })
     </script>
 </body>
