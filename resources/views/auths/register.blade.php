@@ -4,12 +4,32 @@
 <div class="col-4 offset-4">
     <h3 class="login__font-tittle text-center login__form-bottom animate__animated animate__backInRight">Register</h3>
 </div>
-<form method="POST" class="row" >
+
+@if (count($errors) > 0)
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
+
+@if ($message = Session::get('success'))
+
+<div class="alert alert-success">
+
+    <p>{{ $message }}</p>
+
+</div>
+
+@endif
+<form method="POST" class="row">
     @csrf
     <div class="col-6">
         <!-- Phone input -->
         <div class="form-outline login__form-bottom">
-            <input type="text" name="email" id="email" class="form-control login__border" required/>
+            <input type="text" name="email" id="email" class="form-control login__border" required />
             <label class="form-label login__font" for="email">Email</label>
         </div>
 

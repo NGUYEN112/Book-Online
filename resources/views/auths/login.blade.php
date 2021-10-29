@@ -1,9 +1,28 @@
 @extends('layouts.auth-layout')
 
 @section('auth-content')
+@if (count($errors) > 0)
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
+
 <div class="col-4 offset-4">
     <h3 class="login__font-tittle text-center login__form-bottom animate__animated animate__backInRight">Account Log In
     </h3>
+    @if ($message = Session::get('failed'))
+
+          <div class="alert alert-failed">
+
+              <p>{{ $message }}</p>
+
+          </div>
+
+    @endif
     <form method="post">
         @csrf
         <!-- Phone input -->
